@@ -1,10 +1,10 @@
-; A simple program to illuminate and LED connected to RA3 of PORTA
+; A simple program to illuminate and LED connected to RA3 of PORTB
 ; The LEDs are connected to PORTB
-; change the program to flash the LED within 70us
+; change the program to flash the LED within 5s
  
 ;Assign labels to memory addresses
 status equ 0x03 ;FSR for bank1
-trisb equ 0x86 ;memory location for TRISA
+trisb equ 0x86 ;memory location for TRISB
 portb equ 0x06 ;memory location for PORTB
 del_500 equ 0x2c ;memory location for Program Counter (PC) Least Significant Byte
 W equ 0
